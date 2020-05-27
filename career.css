@@ -1,0 +1,27 @@
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    flex-wrap: wrap; 
+    position: static;
+}
+
+.container, .content {
+    flex: 1;
+    padding: 10px;
+}
+
+.image > img {
+    height: 150px;
+    width: auto;
+    float: left;
+    
+}
+
+.content {
+    float: left;
+}
