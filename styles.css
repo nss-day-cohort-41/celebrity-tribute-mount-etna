@@ -97,27 +97,3 @@
 .member > div:nth-child(3) {
     font-style: italic;
 }
-
-
-
-
-.relationships-block {
-    display: flex;
-  }
-  
-  .members {
-    flex-basis: calc(100% / 5);
-    flex-shrink: 0; /* don't shrink, and don't wrap -> leave the container*/
-  }
-  
-  @media screen and (min-width: 967px) and (max-width: 1127px) {
-    .members {
-      flex-basis: calc(100% / 3);
-    }
-  }
-  
-  @media screen and (max-width: 967px) {
-    .members {
-      flex-basis: calc(100% / 2);
-    }
-  });
