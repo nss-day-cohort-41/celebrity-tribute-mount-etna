@@ -3,20 +3,27 @@
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
-    justify-content: left;
+    justify-content: center;
 }
 
 .snapshot {
     width: 80%;
-    border: black solid 1px;
     margin: 2px;
     padding: 3px;
-    background:rgba(255,255,255, 0.7);
-    
+}
+
+.snapshot > div > h2 {
+    margin: 5px 0px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.main-block > div {
+    width: 30%;
 }
 
 .headshot > img {
-    height: 200px;
+    height: 290px;
     width: auto;
     float: left;
     border: 2px solid black;
@@ -24,19 +31,25 @@
 
 .info {
     float: left;
-    font-family: 'Lato', sans-serif;
-    width: 50%;
-    padding-left: 5px;
+    font-family: sans-serif;
+    width: 80%;
+    padding-left: 30px;
     padding-top: 5px;
+}
+
+.info > dl > dt {
+    font-weight: bold;
+    width: 40%;
 }
 
 .tags{ 
     float: left;
     font-weight: bold;
+    margin-right: 30px;
 }
 
 .tagFields {
-    float: right;
+    float: left;
 }
 
 .image > img {
@@ -45,12 +58,66 @@
     border: 2px solid black;
 }
 
-.spouse {
+.member {
     float: left;
-    width: 50%;
+    width: 20%;
+    margin: 5px 0px;
 }
 
-.child {
-    float: left;
-    width: 33%;
+
+.relationships-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    font-family: sans-serif;
 }
+
+.family > div > h2 {
+    margin: 5px 0px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.family {
+    width: 80%;
+    margin: 2px;
+    padding: 3px;
+}
+
+.member > div  {
+    text-align: center;
+}
+
+.member > div:nth-child(2) {
+    font-weight: bold;
+}
+
+.member > div:nth-child(3) {
+    font-style: italic;
+}
+
+
+
+
+.relationships-block {
+    display: flex;
+  }
+  
+  .members {
+    flex-basis: calc(100% / 5);
+    flex-shrink: 0; /* don't shrink, and don't wrap -> leave the container*/
+  }
+  
+  @media screen and (min-width: 967px) and (max-width: 1127px) {
+    .members {
+      flex-basis: calc(100% / 3);
+    }
+  }
+  
+  @media screen and (max-width: 967px) {
+    .members {
+      flex-basis: calc(100% / 2);
+    }
+  });
