@@ -1,27 +1,32 @@
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
+    align-content: flex-start;
+    
 }
 
 .container {
-    width: 40%;
     flex-wrap: wrap; 
-    position: static;
-}
-
-.container, .content {
-    flex: 1;
-    padding: 10px;
+    width: 47%;
+    align-items: center;
+    height: auto;
+    padding-bottom: 15px;
+    
 }
 
 .image > img {
     height: 150px;
     width: auto;
     float: left;
-    
+
 }
 
 .content {
-    float: left;
+   float: left;
+   align-self: center;
+   padding-left: 8px;
+}
+
+
 }
