@@ -1,0 +1,12 @@
+a {
+    padding-right:15px;
+}
+
+nav, footer{
+    background-color: #cccccc;
+}
+
+img {
+    height:200;
+    width:auto;
+}
