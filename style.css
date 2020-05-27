@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image > a > img {
+    height: 200px;
+    width: auto;
+}
+
+.image {
+    text-align: center;
+}
+
+.headline {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container > span {
+    font-size: .8em;
+    font-family: sans-serif;
+    font-style: italic;
+} 
+
+.container {
+    text-align: center;
+}
