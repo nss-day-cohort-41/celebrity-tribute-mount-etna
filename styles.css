@@ -1,0 +1,99 @@
+.main-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+}
+
+.snapshot {
+    width: 80%;
+    margin: 2px;
+    padding: 3px;
+}
+
+.snapshot > div > h2 {
+    margin: 5px 0px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.main-block > div {
+    width: 30%;
+}
+
+.headshot > img {
+    height: 290px;
+    width: auto;
+    float: left;
+    border: 2px solid black;
+}
+
+.info {
+    float: left;
+    font-family: sans-serif;
+    width: 80%;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.info > dl > dt {
+    font-weight: bold;
+    width: 40%;
+}
+
+.tags{ 
+    float: left;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.tagFields {
+    float: left;
+}
+
+.image > img {
+    height: 150px;
+    width: auto;
+    border: 2px solid black;
+}
+
+.member {
+    float: left;
+    width: 20%;
+    margin: 5px 0px;
+}
+
+
+.relationships-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.family > div > h2 {
+    margin: 5px 0px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.family {
+    width: 80%;
+    margin: 2px;
+    padding: 3px;
+}
+
+.member > div  {
+    text-align: center;
+}
+
+.member > div:nth-child(2) {
+    font-weight: bold;
+}
+
+.member > div:nth-child(3) {
+    font-style: italic;
+}
