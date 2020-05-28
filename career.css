@@ -1,8 +1,11 @@
+
+
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
+    
     
 }
 
@@ -12,6 +15,8 @@
     align-items: center;
     height: auto;
     padding-bottom: 15px;
+    font-size: small;
+    
     
 }
 
@@ -26,7 +31,4 @@
    float: left;
    align-self: center;
    padding-left: 8px;
-}
-
-
 }
