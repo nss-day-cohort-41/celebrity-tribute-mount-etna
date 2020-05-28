@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .main-block {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
     justify-content: center;
+}
+
+header > h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
 }
 
 .snapshot {
@@ -15,7 +22,9 @@
 .snapshot > div > h2 {
     margin: 5px 0px;
     padding: 5px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .main-block > div {
@@ -23,23 +32,32 @@
 }
 
 .headshot > img {
-    height: 290px;
+    height: 300px;
     width: auto;
     float: left;
     border: 2px solid black;
+    margin-left: 50px;
+    margin right: 20px;
 }
 
 .info {
     float: left;
     font-family: sans-serif;
-    width: 60%;
+    width: 30%;
     padding-left: 30px;
-    padding-top: 5px;
+    border: black solid 1px;
+    margin-left: 30px;
 }
 
 .info > dl > dt {
     font-weight: bold;
     width: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info > dl > dt > dd {
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .image > img {
@@ -48,12 +66,61 @@
     border: 2px solid black;
 }
 
+/* OVERLAY CSS
+
+I took to Google to find a way to find out how to overlay an image over an image. w3schools.com had a sample code for a text overlay rather than an image overlay. I copied the sample code into my file, but had to make several edits to fit for my purposes.
+
+First, I needed to size the red x image (.overlay) properly over the Deborah image (.image1) 
+
+*/
+
+/* positioned and fit the overlay above .image1 */
+.image1 {
+    position: relative;
+    height: 150;
+    width: auto;
+  }
+
+/* formatted image1 to match img files in the rest of the flex box */
+.image1 > img {
+    height: 150px;
+    width: auto;
+    border: 2px solid black;
+}
+
+/* Absolute positions image in-line with image1, set bottom to 0 to place overlay on top of image1
+width 100% to equal full width of container (shortcut to x-axis center)
+transition - small delay for aesthetic purposes
+opacity - 0 until hover
+padding-bottom, fix to slightly off y-axis center
+*/
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;   
+    padding-bottom: 2px;
+}
+
+/* full opacity on hover */
+.image1:hover .overlay {
+    opacity: 1;
+  }
+
+/* size overlay img */
+.overlay > img {
+    height: 150px;
+    width: auto;
+}
+
+/* OVERLAY CSS END */
+
 .member {
     float: left;
     width: 20%;
     margin: 5px 0px;
 }
-
 
 .relationships-block {
     display: flex;
@@ -67,7 +134,9 @@
 .family > div > h2 {
     margin: 5px 0px;
     padding: 5px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .family {
@@ -86,4 +155,18 @@
 
 .member > div:nth-child(3) {
     font-style: italic;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header > h1 {
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
