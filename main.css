@@ -57,14 +57,6 @@
     border: none;
 }
 
-footer {
-    background-color: #b6b7ba;
-}
-
-footer > div {
-    height: 80px;
-}
-
 .footerimg {
     height: 70px;
     width: auto;
@@ -73,18 +65,34 @@ footer > div {
     border: none;
 }
 
-.footer-nav > a {
-    color: black;
-    text-align: left;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: sans-serif;
-    margin: 3px 0px;
-    display: block;
+.footer-nav {
+    background-color: #b6b7ba;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
 }
+.footer-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.footer-nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
 
 .footer-nav a:hover {
     font-weight: bold;
     color: black;
 }
+
+
+
+
