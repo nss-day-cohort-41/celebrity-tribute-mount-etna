@@ -2,11 +2,16 @@ a {
     padding-right:15px;
 }
 
-nav, footer{
+footer{
     background-color: #cccccc;
 }
 
 img {
+<<<<<<< HEAD
     height: 200px;
     width: auto;
+=======
+    height:200px;
+    width:auto;
+>>>>>>> 36c37206619dc13e7753efacceac2446d168ac3d
 }
