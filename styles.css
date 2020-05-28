@@ -19,7 +19,7 @@
 }
 
 .main-block > div {
-    width: 30%;
+    width: 80%;
 }
 
 .headshot > img {
@@ -32,24 +32,14 @@
 .info {
     float: left;
     font-family: sans-serif;
-    width: 80%;
+    width: 60%;
     padding-left: 30px;
     padding-top: 5px;
 }
 
 .info > dl > dt {
     font-weight: bold;
-    width: 40%;
-}
-
-.tags{ 
-    float: left;
-    font-weight: bold;
-    margin-right: 30px;
-}
-
-.tagFields {
-    float: left;
+    width: 80%;
 }
 
 .image > img {

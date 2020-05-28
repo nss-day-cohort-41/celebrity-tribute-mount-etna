@@ -2,11 +2,11 @@ a {
     padding-right:15px;
 }
 
-nav, footer{
+footer{
     background-color: #cccccc;
 }
 
 img {
-    height:200;
+    height:200px;
     width:auto;
 }
