@@ -10,8 +10,11 @@ using JSON run serve to run locally and view
 
 ## Authors and Acknowledgement
 Brad Cowart -- index.html stylesheet.css
+
 Amanda King --career.html career.css
+
 Chad Jones -- personal-info.html main.css styles.css
+
 Zach McWhirter --newsfeed.html style.css
 
 
