@@ -1,0 +1,36 @@
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    
+    
+}
+
+.container {
+    flex-wrap: wrap; 
+    width: 47%;
+    align-items: center;
+    height: auto;
+    padding-bottom: 15px;
+    font-size: small;
+    
+    
+}
+
+.image > img {
+    height: 150px;
+    width: auto;
+    float: left;
+
+}
+
+.content {
+   float: left;
+   align-self: center;
+   padding-left: 8px;
+}
+
+
